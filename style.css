@@ -28,7 +28,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 80px;
+    gap: 70px;
     border-bottom-right-radius: 15px;
 }
 
@@ -38,6 +38,14 @@ img{
 }
 
 .img1{
+    width: 56px;
+    height: 56px;
+    background: #543c3b;
+    padding: 10px;
+    border-radius: 12px;
+}
+
+.img2{
     width: 56px;
     height: 56px;
     background: #543c3b;
