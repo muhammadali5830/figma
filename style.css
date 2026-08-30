@@ -36,3 +36,11 @@ img{
     width: 24px;
     height: 24px;
 }
+
+.img1{
+    width: 56px;
+    height: 56px;
+    background: #543c3b;
+    padding: 10px;
+    border-radius: 12px;
+}
