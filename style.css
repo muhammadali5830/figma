@@ -20,17 +20,7 @@
     display: flex;
 }
 
-.img-div{
-    width: 104px;
-    height: 834px;
-    background: #1f1d2b;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 70px;
-    border-bottom-right-radius: 15px;
-}
+
 
 img{
     width: 24px;
@@ -55,5 +45,9 @@ img{
 
 .flex{
     width: 104px;
-    height: 104.25px;
+    height: 103.5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #1f1d2b;
 }
