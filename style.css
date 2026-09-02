@@ -31,54 +31,115 @@ input {
 .divs {
   display: flex;
 }
-
-/* Sidebar Styles */
-.img-div {
+/* Sidebar asosiy konteyneri */
+.sidebar {
   width: 104px;
-  min-width: 104px;
   min-height: 100vh;
-  padding-top: 10px;
   background: #1f1d2b;
-  border-radius: 18px 0 0 18px;
+  border-radius: 16px 0 0 16px;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-end; /* Active element orqa fonini o'ngga yopishtirish uchun */
+  padding: 24px 0;
+  box-sizing: border-box;
 }
 
-.flex {
-  width: 104px;
-  height: 90px;
+/* Logo bo'limi */
+.logo-item {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.logo-icon {
+  width: 56px;
+  height: 56px;
+  background: #543c3b;
+  border-radius: 12px;
   display: flex;
   align-items: center;
   justify-content: center;
-  cursor: pointer;
 }
 
-.flex img {
+.logo-icon img {
+  width: 28px;
+  height: 28px;
+}
+
+/* Navigatsiya ro'yxati */
+.nav-list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-item {
+  width: 92px; /* Active holatida orqa fon o'ng tarafga taqaladi */
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-left: auto;
+}
+
+.nav-link {
+  width: 56px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.nav-link img {
   width: 24px;
   height: 24px;
 }
 
-.div1 img {
-  width: 56px;
-  height: 56px;
-  padding: 14px;
-  background: #543c3b;
-  border-radius: 12px;
+.nav-item.active {
+  background: #252836;
+  border-radius: 16px 0 0 16px;
 }
 
-.div2.active img {
-  width: 56px;
-  height: 56px;
-  padding: 16px;
-  background: #ff786b;
-  border-radius: 12px;
-  box-shadow: 0 8px 20px rgba(255, 120, 107, 0.25);
+.nav-item.active .nav-link {
+  background: #ea736d;
 }
 
-.div8 {
+.nav-item.active::before {
+  content: "";
+  position: absolute;
+  top: -20px;
+  right: 0;
+  width: 20px;
+  height: 20px;
+  background: transparent;
+  border-radius: 0 0 20px 0;
+  box-shadow: 10px 10px 0 10px #252836;
+  pointer-events: none;
+}
+
+.nav-item.active::after {
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  right: 0;
+  width: 20px;
+  height: 20px;
+  background: transparent;
+  border-radius: 0 20px 0 0;
+  box-shadow: 10px -10px 0 10px #252836;
+  pointer-events: none;
+}
+
+.logout-item {
   margin-top: auto;
-  margin-bottom: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 /* Menu Section */
