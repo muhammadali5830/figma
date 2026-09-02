@@ -39,7 +39,7 @@ input {
   border-radius: 16px 0 0 16px;
   display: flex;
   flex-direction: column;
-  align-items: flex-end; /* Active element orqa fonini o'ngga yopishtirish uchun */
+  align-items: flex-end; 
   padding: 24px 0;
   box-sizing: border-box;
 }
