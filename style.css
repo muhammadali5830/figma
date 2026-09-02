@@ -31,7 +31,7 @@ input {
 .divs {
   display: flex;
 }
-/* Sidebar asosiy konteyneri */
+
 .sidebar {
   width: 104px;
   min-height: 100vh;
