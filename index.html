@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Jaegar Resto POS</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -12,113 +12,201 @@
     <section class="ovqat">
         <div class="container">
             <div class="divs">
-                <div class="img-div">
+                
+                <!-- Yon panel (Sidebar) -->
+                <aside class="img-div">
                     <div class="div1 flex">
                         <img src="./svg/Vector.svg" alt="Restaurant">
                     </div>
-
-                    <div class="div2 flex">
+                    <div class="div2 flex active">
                         <img src="./svg/Home.svg" alt="Home">
                     </div>
-
                     <div class="div3 flex">
                         <img src="./svg/Discount.svg" alt="Discount">
                     </div>
-
                     <div class="div4 flex">
                         <img src="./svg/Dashboard.svg" alt="Dashboard">
                     </div>
-
                     <div class="div5 flex">
                         <img src="./svg/Message.svg" alt="Message">
                     </div>
-
                     <div class="div6 flex">
                         <img src="./svg/Notification.svg" alt="Notification">
                     </div>
-
                     <div class="div7 flex">
                         <img src="./svg/Setting.svg" alt="Setting">
                     </div>
-
                     <div class="div8 flex">
                         <img src="./svg/Log Out.svg" alt="Log out">
                     </div>
-                </div>
+                </aside>
 
-                <div class="div2"><section class="menu-section">
-      <header class="menu-header">
-        <div>
-          <h1>Jaegar Resto</h1>
-          <p>Tuesday, 2 Feb 2021</p>
-        </div>
-        <label class="search-box">
-          <span>⌕</span>
-          <input type="search" placeholder="Search for food, coffe, etc..." />
-        </label>
-      </header>
+                <!-- Menyu bo'limi -->
+                <main class="menu-section">
+                    <header class="menu-header">
+                        <div>
+                            <h1>Jaegar Resto</h1>
+                            <p>Tuesday, 2 Feb 2021</p>
+                        </div>
+                        <label class="search-box">
+                            <span>⌕</span>
+                            <input type="search" placeholder="Search for food, coffee, etc..." />
+                        </label>
+                    </header>
 
-      <nav class="categories" aria-label="Food categories">
-        <a class="category active" href="#">Hot Dishes</a>
-        <a class="category" href="#">Cold Dishes</a>
-        <a class="category" href="#">Soup</a>
-        <a class="category" href="#">Grill</a>
-        <a class="category" href="#">Appetizer</a>
-        <a class="category" href="#">Dessert</a>
-      </nav>
+                    <nav class="categories" aria-label="Food categories">
+                        <a class="category active" href="#">Hot Dishes</a>
+                        <a class="category" href="#">Cold Dishes</a>
+                        <a class="category" href="#">Soup</a>
+                        <a class="category" href="#">Grill</a>
+                        <a class="category" href="#">Appetizer</a>
+                        <a class="category" href="#">Dessert</a>
+                    </nav>
 
-      <div class="section-heading">
-        <h2>Choose Dishes</h2>
-        <button class="select-button">⌄ &nbsp; Dine In</button>
-      </div>
+                    <div class="section-heading">
+                        <h2>Choose Dishes</h2>
+                        <button class="select-button">⌄ &nbsp; Dine In</button>
+                    </div>
 
-      <div class="food-grid">
-        <article class="food-card">
-          <img src="https://images.unsplash.com/photo-1569718212165-3a8278d5f624?auto=format&fit=crop&w=300&q=85" alt="Spicy seasoned seafood noodles">
-          <h3>Spicy seasoned<br>seafood noodles</h3><strong>$ 2.29</strong><p>20 Bowls available</p>
-        </article>
-        <article class="food-card">
-          <img src="https://images.unsplash.com/photo-1556761223-4c4282c73f77?auto=format&fit=crop&w=300&q=85" alt="Salted pasta with mushroom sauce">
-          <h3>Salted Pasta with<br>mushroom sauce</h3><strong>$ 2.69</strong><p>11 Bowls available</p>
-        </article>
-        <article class="food-card">
-          <img src="https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=300&q=85" alt="Beef dumpling in hot and sour soup">
-          <h3>Beef dumpling in hot<br>and sour soup</h3><strong>$ 2.99</strong><p>16 Bowls available</p>
-        </article>
-        <article class="food-card">
-          <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=300&q=85" alt="Healthy noodle with spinach leaf">
-          <h3>Healthy noodle with<br>spinach leaf</h3><strong>$ 3.29</strong><p>22 Bowls available</p>
-        </article>
-        <article class="food-card">
-          <img src="https://images.unsplash.com/photo-1603133872878-684f208fb84b?auto=format&fit=crop&w=300&q=85" alt="Hot spicy fried rice with omelet">
-          <h3>Hot spicy fried rice<br>with omelet</h3><strong>$ 3.49</strong><p>13 Bowls available</p>
-        </article>
-        <article class="food-card">
-          <img src="https://images.unsplash.com/photo-1563245372-f21724e3856d?auto=format&fit=crop&w=300&q=85" alt="Spicy instant noodle with special omelette">
-          <h3>Spicy instant noodle<br>with special omelette</h3><strong>$ 3.59</strong><p>17 Bowls available</p>
-        </article>
-      </div>
-    </section></div>
-                <div class="div3"><aside class="order-section">
-      <h2>Orders #34562</h2>
-      <div class="order-types"><button class="selected">Dine In</button><button>To Go</button><button>Delivery</button></div>
-      <div class="order-table-head"><span>Item</span><span>Qty</span><span>Price</span></div>
-      <div class="order-list">
-        <div class="order-item"><div class="order-item-top"><img src="https://images.unsplash.com/photo-1569718212165-3a8278d5f624?auto=format&fit=crop&w=80&q=80" alt=""><div class="item-name"><b>Spicy seasoned sea...</b><small>$ 2.29</small></div><span class="qty">2</span><strong>$ 4,58</strong></div><div class="order-item-bottom"><input value="Please, just a little bit spicy only." aria-label="Order note"><button class="delete">♧</button></div></div>
-        <div class="order-item"><div class="order-item-top"><img src="https://images.unsplash.com/photo-1556761223-4c4282c73f77?auto=format&fit=crop&w=80&q=80" alt=""><div class="item-name"><b>Salted pasta with mu...</b><small>$ 2.69</small></div><span class="qty">1</span><strong>$ 2.69</strong></div><div class="order-item-bottom"><input placeholder="Order Note..." aria-label="Order note"><button class="delete">♧</button></div></div>
-        <div class="order-item"><div class="order-item-top"><img src="https://images.unsplash.com/photo-1563245372-f21724e3856d?auto=format&fit=crop&w=80&q=80" alt=""><div class="item-name"><b>Spicy instant noodle...</b><small>$ 3.49</small></div><span class="qty">3</span><strong>$ 10,47</strong></div><div class="order-item-bottom"><input placeholder="Order Note..." aria-label="Order note"><button class="delete">♧</button></div></div>
-        <div class="order-item"><div class="order-item-top"><img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=80&q=80" alt=""><div class="item-name"><b>Healthy noodle with ...</b><small>$ 3.29</small></div><span class="qty">1</span><strong>$ 3.29</strong></div></div>
-      </div>
-      <div class="order-summary"><div><span>Discount</span><b>$0</b></div><div><span>Sub total</span><b>$ 21,03</b></div><button class="payment-btn">Continue to Payment</button></div>
-    </aside></div>
+                    <div class="food-grid">
+                        <article class="food-card">
+                            <img src="https://images.unsplash.com/photo-1569718212165-3a8278d5f624?auto=format&fit=crop&w=300&q=85" alt="Spicy seasoned seafood noodles">
+                            <h3>Spicy seasoned<br>seafood noodles</h3>
+                            <strong>$ 2.29</strong>
+                            <p>20 Bowls available</p>
+                        </article>
+
+                        <article class="food-card">
+                            <img src="https://images.unsplash.com/photo-1556761223-4c4282c73f77?auto=format&fit=crop&w=300&q=85" alt="Salted pasta with mushroom sauce">
+                            <h3>Salted Pasta with<br>mushroom sauce</h3>
+                            <strong>$ 2.69</strong>
+                            <p>11 Bowls available</p>
+                        </article>
+
+                        <article class="food-card">
+                            <img src="https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=300&q=85" alt="Beef dumpling in hot and sour soup">
+                            <h3>Beef dumpling in hot<br>and sour soup</h3>
+                            <strong>$ 2.99</strong>
+                            <p>16 Bowls available</p>
+                        </article>
+
+                        <article class="food-card">
+                            <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=300&q=85" alt="Healthy noodle with spinach leaf">
+                            <h3>Healthy noodle with<br>spinach leaf</h3>
+                            <strong>$ 3.29</strong>
+                            <p>22 Bowls available</p>
+                        </article>
+
+                        <article class="food-card">
+                            <img src="https://images.unsplash.com/photo-1603133872878-684f208fb84b?auto=format&fit=crop&w=300&q=85" alt="Hot spicy fried rice with omelet">
+                            <h3>Hot spicy fried rice<br>with omelet</h3>
+                            <strong>$ 3.49</strong>
+                            <p>13 Bowls available</p>
+                        </article>
+
+                        <article class="food-card">
+                            <img src="https://images.unsplash.com/photo-1563245372-f21724e3856d?auto=format&fit=crop&w=300&q=85" alt="Spicy instant noodle with special omelette">
+                            <h3>Spicy instant noodle<br>with special omelette</h3>
+                            <strong>$ 3.59</strong>
+                            <p>17 Bowls available</p>
+                        </article>
+                    </div>
+                </main>
+
+                <!-- Buyurtmalar bo'limi -->
+                <aside class="order-section">
+                    <h2>Orders #34562</h2>
+                    
+                    <div class="order-types">
+                        <button class="selected">Dine In</button>
+                        <button>To Go</button>
+                        <button>Delivery</button>
+                    </div>
+
+                    <div class="order-table-head">
+                        <span>Item</span>
+                        <span>Qty</span>
+                        <span>Price</span>
+                    </div>
+
+                    <div class="order-list">
+                        <div class="order-item">
+                            <div class="order-item-top">
+                                <img src="https://images.unsplash.com/photo-1569718212165-3a8278d5f624?auto=format&fit=crop&w=80&q=80" alt="">
+                                <div class="item-name">
+                                    <b>Spicy seasoned sea...</b>
+                                    <small>$ 2.29</small>
+                                </div>
+                                <span class="qty">2</span>
+                                <strong>$ 4,58</strong>
+                            </div>
+                            <div class="order-item-bottom">
+                                <input value="Please, just a little bit spicy only." aria-label="Order note">
+                                <button class="delete">🗑</button>
+                            </div>
+                        </div>
+
+                        <div class="order-item">
+                            <div class="order-item-top">
+                                <img src="https://images.unsplash.com/photo-1556761223-4c4282c73f77?auto=format&fit=crop&w=80&q=80" alt="">
+                                <div class="item-name">
+                                    <b>Salted pasta with mu...</b>
+                                    <small>$ 2.69</small>
+                                </div>
+                                <span class="qty">1</span>
+                                <strong>$ 2.69</strong>
+                            </div>
+                            <div class="order-item-bottom">
+                                <input placeholder="Order Note..." aria-label="Order note">
+                                <button class="delete">🗑</button>
+                            </div>
+                        </div>
+
+                        <div class="order-item">
+                            <div class="order-item-top">
+                                <img src="https://images.unsplash.com/photo-1563245372-f21724e3856d?auto=format&fit=crop&w=80&q=80" alt="">
+                                <div class="item-name">
+                                    <b>Spicy instant noodle...</b>
+                                    <small>$ 3.49</small>
+                                </div>
+                                <span class="qty">3</span>
+                                <strong>$ 10,47</strong>
+                            </div>
+                            <div class="order-item-bottom">
+                                <input placeholder="Order Note..." aria-label="Order note">
+                                <button class="delete">🗑</button>
+                            </div>
+                        </div>
+
+                        <div class="order-item">
+                            <div class="order-item-top">
+                                <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=80&q=80" alt="">
+                                <div class="item-name">
+                                    <b>Healthy noodle with ...</b>
+                                    <small>$ 3.29</small>
+                                </div>
+                                <span class="qty">1</span>
+                                <strong>$ 3.29</strong>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="order-summary">
+                        <div>
+                            <span>Discount</span>
+                            <b>$0</b>
+                        </div>
+                        <div>
+                            <span>Sub total</span>
+                            <b>$ 21,03</b>
+                        </div>
+                        <button class="payment-btn">Continue to Payment</button>
+                    </div>
+                </aside>
+
             </div>
         </div>
     </section>
-
-
-     
-
-    
 </body>
 
 </html>
