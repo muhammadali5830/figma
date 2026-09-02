@@ -73,7 +73,7 @@ input {
 }
 
 .nav-item {
-  width: 92px; /* Active holatida orqa fon o'ng tarafga taqaladi */
+  width: 92px; 
   height: 80px;
   display: flex;
   align-items: center;
