@@ -429,17 +429,3 @@ input {
   background: #ff8778;
 }
 
-/* Responsivlik */
-@media (max-width: 1050px) {
-  .order-section {
-    width: 350px;
-    min-width: 350px;
-  }
-  .menu-section {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-  .categories {
-    gap: 17px;
-  }
-}
